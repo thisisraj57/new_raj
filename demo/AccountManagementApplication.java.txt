@@ -1,0 +1,32 @@
+**Class:** `AccountManagementApplication`
+
+**Description:**
+
+The `AccountManagementApplication` class is the main application class for a Spring Boot application that provides account management functionality. It is annotated with `@SpringBootApplication`, which indicates that it is the main class of a Spring Boot application and that it should be scanned for annotated components.
+
+**Method:**
+
+* `public static void main(String[] args)`:
+
+    This is the main method of the application. It is the entry point of the application and is responsible for starting the Spring Boot application. It calls the `SpringApplication.run()` method to start the application.
+
+**Usage:**
+
+To use this class, you can create a new Spring Boot project and add the following code to the main application class:
+
+```java
+public class MyApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(MyApplication.class, args);
+    }
+}
+```
+
+You can then run the application by executing the following command:
+
+```
+mvn spring-boot:run
+```
+
+This will start the Spring Boot application and make it listen for HTTP requests on port 8080 by default.
