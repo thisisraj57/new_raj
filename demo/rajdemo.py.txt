@@ -1,0 +1,61 @@
+## Python Program to Find the Area of a Triangle
+
+### Description
+
+This Python program calculates the area of a triangle using Heron's formula. Heron's formula states that the area of a triangle with sides of length `a`, `b`, and `c` is given by:
+
+```
+area = sqrt(s * (s - a) * (s - b) * (s - c))
+```
+
+where `s` is the semi-perimeter of the triangle, defined as:
+
+```
+s = (a + b + c) / 2
+```
+
+### Usage
+
+To use this program, you can either:
+
+- **Provide input values:** Uncomment the lines that start with `#` to take the side lengths as input from the user.
+- **Use predefined values:** Leave the predefined values of `a`, `b`, and `c` as they are.
+
+### Example
+
+If you provide the following input values:
+
+```
+a = 5
+b = 6
+c = 7
+```
+
+The program will output:
+
+```
+The area of the triangle is 14.70
+```
+
+### Code
+
+```python
+# Python Program to find the area of triangle
+
+# Predefined side lengths
+a = 5
+b = 6
+c = 7
+
+# Uncomment below to take inputs from the user
+# a = float(input('Enter first side: '))
+# b = float(input('Enter second side: '))
+# c = float(input('Enter third side: '))
+
+# calculate the semi-perimeter
+s = (a + b + c) / 2
+
+# calculate the area
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area)
+```
